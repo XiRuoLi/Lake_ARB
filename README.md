@@ -1,1 +1,2 @@
-# Code for lake antibiotic-resistant bacteria analysis
+# Lake_ARB
+Code for lake antibiotic-resistant bacteria analysis
