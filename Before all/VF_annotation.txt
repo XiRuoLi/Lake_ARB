@@ -1,0 +1,19 @@
+# Step 1. Build DIAMOND database from the VFDB protein set
+
+diamond makedb \
+    --in /path/to/VFDB_proteins.faa \
+    --db VFDB
+
+
+# Step 2. Annotate VF-associated proteins
+# using DIAMOND and the VFDB database
+
+diamond blastp \
+    --threads 64 \
+    --query /path/to/predicted_proteins.faa \
+    --db /path/to/VFDB.dmnd \
+    --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore slen \
+    --id 80 \
+    --query-cover 70 \
+    --evalue 1E-10 \
+    --out vf.tsv
