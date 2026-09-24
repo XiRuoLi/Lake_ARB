@@ -1,6 +1,6 @@
-# ARG Quantification Using RGI-BWT
+# ARG Quantification Using RGI
 
-This repository contains shell scripts for antibiotic resistance gene (ARG) profiling using the RGI-BWT workflow from the Comprehensive Antibiotic Resistance Database (CARD).
+This repository contains shell scripts for antibiotic resistance gene (ARG) profiling using the RGI workflow from the Comprehensive Antibiotic Resistance Database (CARD).
 
 
 ## Paired-end reads
