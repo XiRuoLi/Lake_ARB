@@ -1,0 +1,11 @@
+# MAG Dereplication Using dRep
+
+dRep dereplicate OUTPUT_DIR \
+    -g INPUT_DIR/*.fa \
+    -p 192 \
+    --S_algorithm fastANI \
+    --ignoreGenomeQuality \
+    --pa 0.9 \
+    --S_ani 0.95 \
+    --cov_thresh 0.3 \
+    --skip_plots
